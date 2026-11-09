@@ -10,12 +10,11 @@ Purchase order → **MIGO** (goods receipt) → **MIRO** (invoice verification) 
 
 - [MIGO — Goods Receipt](guides/migo-goods-receipt.md): receive goods against a purchase order, movement type 101.
 - [MIRO — Invoice Verification](guides/miro-invoice-verification.md): verify vendor invoices against the PO and the goods receipt (three-way match).
-- [F110 — Automatic Payment Program].
--[F-53. — Manual Payments 
+- [F110 — Automatic Payment Program](guides/f110-automatic-payments.md): run payment proposals and pay open vendor items.
 
 ## Who this is for
 
-Accounts payable analysts, Accountant and SAP Users working in P2P: goods receipt, invoice verification, payments, month-end close and bank reconciliation.
+Accounts payable analysts and SAP users working in P2P: goods receipt, invoice verification, payments, month-end close and bank reconciliation.
 
 ## Note
 
