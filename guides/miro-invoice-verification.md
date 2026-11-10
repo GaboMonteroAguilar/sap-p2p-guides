@@ -33,6 +33,16 @@ If price or quantity differ beyond the tolerance limits, the invoice is blocked 
 - **Missing goods receipt**: the invoice arrived before the goods. Wait for the receipt or check whether the goods were received under a different PO item.
 - **Tax code wrong**: the tax code on the invoice does not match the PO. Correct it before posting.
 
+## Payment block R: quantity discrepancy
+
+If your SAP configuration uses payment block **R** for an invoice variance, confirm the block reason in your system; payment-block keys can vary by configuration. For example, the supplier invoices 6 packages but only 5 were received. Do not pay the invoice or post a receipt for goods that have not arrived.
+
+1. In **ME21N**, check the PO item, ordered quantity and price.
+2. In **MIGO**, compare the posted goods receipt with the delivery note and the quantity physically received. Keep the receipt accurate; follow your local correction process if it was posted incorrectly.
+3. Contact **Purchasing** to reconcile the PO, receipt and invoice. If the sixth package is still owed, ask Purchasing to arrange delivery with the supplier. If it will not be delivered, have Purchasing request a corrected invoice or credit note from the supplier.
+4. In **MIRO**, verify or correct the invoice according to your company's process once the discrepancy is resolved.
+5. In **FBL1N**, check that the vendor item remains blocked until resolution. Use **MRBR** to release it only after the discrepancy is resolved and the invoice is approved under your local process.
+
 ## Tips
 
 - Use **MRBR** to release blocked invoices once the difference is resolved.
